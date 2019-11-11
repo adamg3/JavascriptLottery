@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery Game</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
+<body>
+
+<div class="jumbotron">
+    <h1 class="display-1">Javascript Lottery Game</h1>
+    <h4>Win upto £500 by matching 3 to 6 numbers</h4>
+    <h4>3 Numbers = £50, 4 Numbers = £100, 5 Numbers = £200, 6 Numbers = £500</h4>
+</div>
+
+<div class="container">
+    <div>
+        <h4>Enter your numbers in the text boxes below, choosing numbers from 1-59 and no duplicates!</h4>
+    </div>
+
+
+    <div class="row player-balls">
+<!--        <ul class="player-balls">-->
+            <li class="lottery-ball col-2"></li>
+            <li class="lottery-ball col-2"></li>
+            <li class="lottery-ball col-2"></li>
+            <li class="lottery-ball col-2"></li>
+            <li class="lottery-ball col-2"></li>
+            <li class="lottery-ball col-2"></li>
+<!--        </ul>-->
+    </div>
+    <div class="row" id="input-controller">
+        <div class="col-2">
+            <input type="text" id="input0" class="form-control" placeholder="First Number">
+        </div>
+        <div class="col-2">
+            <input type="text" id="input1" class="form-control" placeholder="Second Number">
+        </div>
+        <div class="col-2">
+            <input type="text" id="input2" class="form-control" placeholder="Third Number">
+        </div>
+        <div class="col-2">
+            <input type="text" id="input3" class="form-control" placeholder="Fourth Number">
+        </div>
+        <div class="col-2">
+            <input type="text" id="input4" class="form-control" placeholder="Fifth Number">
+        </div>
+        <div class="col-2">
+            <input type="text" id="input5" class="form-control" placeholder="Sixth Number">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <button class="btn btn-primary btn-large player-choice" id="confirm-numbers">Confirm Your Numbers!</button>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-warning btn-large player-choice" id="pick-random">Pick random numbers!</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 start-button">
+        <button class="btn btn-block btn-danger" id="start-draw">START THE DRAW!</button>
+        </div>
+    </div>
+    <div>
+    </div>
+    <div class="draw-announce">
+        <h4>THE DRAWN NUMBERS ARE:</h4>
+    </div>
+
+    <div class="row computer-balls">
+        <!--        <ul class="player-balls">-->
+        <li class="computer-lottery-ball col-2"></li>
+        <li class="computer-lottery-ball col-2"></li>
+        <li class="computer-lottery-ball col-2"></li>
+        <li class="computer-lottery-ball col-2"></li>
+        <li class="computer-lottery-ball col-2"></li>
+        <li class="computer-lottery-ball col-2"></li>
+        <!--        </ul>-->
+    </div>
+    <div class="win-announce">
+
+    </div>
+    <div>
+        <button class="btn btn-block btn-info button-reset">Reset The Game</button>
+    </div>
+
+
+</div>
+
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="">Adam Giles</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
